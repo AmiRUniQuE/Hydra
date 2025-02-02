@@ -1,3 +1,9 @@
-function orderBoost(rank, price) {
-    alert(`You've selected ${rank} boosting for $${price}. Contact us on Discord or Email to proceed.`);
-}
+// Smooth scrolling
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
